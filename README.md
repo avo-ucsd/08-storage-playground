@@ -16,6 +16,12 @@ Credits:
 
 I take no credit for writing the code.
 
+### Links to Experiments
+If you would like `.json` files to play arround with, see the `assets/` folder.
+- [localStorage](https://avo-ucsd.github.io/08-storage-playground/localStorage-recipes.html)
+- [IndexedDB](https://avo-ucsd.github.io/08-storage-playground/indexedDB-recipes.html)
+- [base64](https://avo-ucsd.github.io/08-storage-playground/localStorage-base64.html)
+
 ## The Problem
 In our project app, we're going to need to have some sort of storage method for our recipes. We also need to address the **CRUD** (Create, Read, Update, Delete) aspect of the project. The heart of the problem is deciding between [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) versus [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API). Both are browser storage methods, but they are different in their own ways. Below is a *summary* of *some* key differences that may be relevant to our project. Note this is *not* a comprehensive list.
 
@@ -37,11 +43,11 @@ Here's a quick rundown of the pros and cons:
 | Item | Pros | Cons |
 | ---- | ---- | ---- |
 | **Direct file path** | - Simplest method (and the one we've worked most with in the Lab assignments) | - Not really a permanent solution. Files can be changed (e.g. location or name) or deleted.  |
-| DFP | - Works with localStorage and IndexedDB | - CORS policy will complain for security reasons. |
+|  | - Works with localStorage and IndexedDB | - CORS policy will complain for security reasons |
 | **base64** | - Works with localStorage and IndexedDB | - Incredibly storage inefficient (blows up the original file size when converting to base64) |
-| b64 | - Independent of original image file changing | - Necessitates FileReader |
+|   | - Independent of original image file changing | - Necessitates FileReader |
 | **`Blob`** Object | - Keeps the original image file size (storage efficient) | - Necessitates IndexedDB and FileReader |
-| blob | - Independent of original image file changing | |
+|  | - Independent of original image file changing | |
 
 ### Approaches to Consider
 While we discuss our options and/or wait for approval for these APIs, 
