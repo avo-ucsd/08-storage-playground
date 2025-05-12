@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": "Healthy Breakfast Smoothie Bowl",
+  "author": "Sarah Green",
+  "image": "https://example.com/images/smoothie-bowl.jpg",
+  "datePublished": "2024-05-08",
+  "description": "A nutritious and colorful smoothie bowl packed with fruits, protein, and healthy toppings. Perfect for a refreshing breakfast or post-workout meal.",
+  "prepTime": "PT10M",
+  "cookTime": "PT0M",
+  "totalTime": "PT10M",
+  "recipeCategory": "Breakfast",
+  "recipeCuisine": "Health Food",
+  "recipeIngredient": [
+    "1 frozen banana",
+    "1 cup frozen mixed berries",
+    "1/2 cup Greek yogurt",
+    "1/4 cup almond milk",
+    "1 tablespoon honey or maple syrup (optional)",
+    "1 tablespoon chia seeds",
+    "Toppings: sliced fresh fruits, granola, coconut flakes, nuts"
+  ],
+  "recipeInstructions": [
+    "Add frozen banana, berries, Greek yogurt, and almond milk to a blender.",
+    "Blend until smooth but still thick. If mixture is too thick, add a little more almond milk.",
+    "Add honey or maple syrup if desired and blend briefly to combine.",
+    "Pour smoothie mixture into a bowl.",
+    "Top with fresh fruit slices, a sprinkle of granola, coconut flakes, and a sprinkle of chia seeds.",
+    "Serve immediately and enjoy with a spoon!"
+  ]
+}

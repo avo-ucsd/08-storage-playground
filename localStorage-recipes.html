@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager - LocalStorage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Manager</h1>
+        <p>Using LocalStorage</p>
+    </header>
+
+    <nav class="implementation-nav">
+        <div class="implementation-toggle">
+            <span>Switch Implementation:</span>
+            <a href="./localStorage-recipes.html" class="implementation-link">localStorage</a> | 
+            <a href="./indexedDB-recipes.html" class="implementation-link">IndexedDB</a>
+            <a href="./indexedDB-base64.html" class="implementation-link">IndexedDB</a>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="recipe-form-container">
+            <h2>Add New Recipe</h2>
+            <form id="recipeForm">
+                <div class="form-group">
+                    <label for="name">Recipe Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image">Image URL:</label>
+                    <input type="url" id="image" name="image">
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prepTime">Prep Time (e.g., PT15M):</label>
+                    <input type="text" id="prepTime" name="prepTime">
+                </div>
+                
+                <div class="form-group">
+                    <label for="cookTime">Cook Time (e.g., PT1H):</label>
+                    <input type="text" id="cookTime" name="cookTime">
+                </div>
+                
+                <div class="form-group">
+                    <label for="totalTime">Total Time (e.g., PT1H15M):</label>
+                    <input type="text" id="totalTime" name="totalTime">
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeCategory">Recipe Category:</label>
+                    <input type="text" id="recipeCategory" name="recipeCategory">
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeCuisine">Recipe Cuisine:</label>
+                    <input type="text" id="recipeCuisine" name="recipeCuisine">
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeIngredient">Ingredients (one per line):</label>
+                    <textarea id="recipeIngredient" name="recipeIngredient" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeInstructions">Instructions (one step per line):</label>
+                    <textarea id="recipeInstructions" name="recipeInstructions" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="datePublished">Date Published:</label>
+                    <input type="date" id="datePublished" name="datePublished">
+                </div>
+                
+                <button type="submit">Save Recipe</button>
+            </form>
+        </section>
+        
+        <section class="recipe-display">
+            <h2>Your Recipes</h2>
+            <div class="import-container">
+                <label for="jsonImport">Import Recipe JSON:</label>
+                <input type="file" id="jsonImport" accept=".json">
+                <button id="importBtn">Import</button>
+            </div>
+            
+            <div id="recipeCards"></div>
+        </section>
+    </main>
+    
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="recipeDetails"></div>
+        </div>
+    </div>
+    
+    <script src="localStorage-recipes.js"></script>
+</body>
+</html>

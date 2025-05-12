@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": "Classic Chocolate Chip Cookies",
+  "author": "Jane Baker",
+  "image": "https://example.com/images/chocolate-chip-cookies.jpg",
+  "datePublished": "2024-05-01",
+  "description": "Soft and chewy chocolate chip cookies with crisp edges and melty chocolate chips. Perfect for dessert or afternoon snacks.",
+  "prepTime": "PT15M",
+  "cookTime": "PT12M",
+  "totalTime": "PT27M",
+  "recipeCategory": "Dessert",
+  "recipeCuisine": "American",
+  "recipeIngredient": [
+    "1 cup (2 sticks) unsalted butter, softened",
+    "3/4 cup granulated sugar",
+    "3/4 cup packed brown sugar",
+    "2 large eggs",
+    "2 teaspoons vanilla extract",
+    "2 1/4 cups all-purpose flour",
+    "1 teaspoon baking soda",
+    "1/2 teaspoon salt",
+    "2 cups semi-sweet chocolate chips"
+  ],
+  "recipeInstructions": [
+    "Preheat oven to 375°F (190°C). Line baking sheets with parchment paper.",
+    "In a large bowl, cream together butter, granulated sugar, and brown sugar until light and fluffy.",
+    "Beat in eggs one at a time, then stir in vanilla.",
+    "In a separate bowl, combine flour, baking soda, and salt. Gradually add to the wet ingredients and mix well.",
+    "Fold in chocolate chips.",
+    "Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.",
+    "Bake for 10-12 minutes or until edges are golden brown but centers are still soft.",
+    "Allow cookies to cool on baking sheets for 5 minutes before transferring to wire racks to cool completely."
+  ]
+}

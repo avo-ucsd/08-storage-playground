@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": "Fresh Tomato Pasta",
+  "author": "Marco Rossi",
+  "image": "https://example.com/images/fresh-tomato-pasta.jpg",
+  "datePublished": "2024-04-15",
+  "description": "A light and fresh pasta dish featuring ripe tomatoes, garlic, and basil. Ready in just 20 minutes for a perfect weeknight dinner.",
+  "prepTime": "PT10M",
+  "cookTime": "PT15M",
+  "totalTime": "PT25M",
+  "recipeCategory": "Main Course",
+  "recipeCuisine": "Italian",
+  "recipeIngredient": [
+    "1 pound spaghetti or linguine",
+    "4 large ripe tomatoes, diced",
+    "4 cloves garlic, minced",
+    "1/4 cup extra virgin olive oil",
+    "1/2 cup fresh basil leaves, torn",
+    "1/2 teaspoon red pepper flakes (optional)",
+    "1/2 cup grated Parmesan cheese",
+    "Salt and freshly ground black pepper to taste"
+  ],
+  "recipeInstructions": [
+    "Bring a large pot of salted water to a boil. Add pasta and cook according to package directions until al dente.",
+    "While pasta is cooking, heat olive oil in a large skillet over medium heat. Add garlic and red pepper flakes (if using) and cook until fragrant, about 1 minute.",
+    "Add diced tomatoes to the skillet and cook for 5-7 minutes until they start to break down and release their juices.",
+    "Season the tomato mixture with salt and pepper to taste.",
+    "Drain the pasta, reserving 1/2 cup of pasta water.",
+    "Add the pasta to the skillet with the tomato mixture and toss to combine. If the pasta seems dry, add a splash of the reserved pasta water.",
+    "Remove from heat and stir in the torn basil leaves.",
+    "Serve immediately, topped with grated Parmesan cheese."
+  ]
+}

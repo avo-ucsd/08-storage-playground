@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body data-rsssl=1>
+
+<nav class="implementation-nav">
+    <div class="implementation-toggle">
+        <span>Switch Implementation:</span>
+        <a href="./localStorage-recipes.html" class="implementation-link">localStorage</a> | 
+        <a href="./indexedDB-recipes.html" class="implementation-link">IndexedDB</a>
+        <a href="./indexedDB-base64.html" class="implementation-link">IndexedDB</a>
+    </div>
+</nav>
+
+<p>Select a file and it will be read by the FileReader and saved to localStorage. Then click the button to see the data URL it produces in the DOM.</p>
+<input type="file" id="file-input-element">
+<button id="btn">Print contents of localStorage</button>
+<div id="output"></div>
+<script>
+    showResult();
+    function showResult() {
+        const inputEl = document.getElementById('file-input-element');
+        inputEl.addEventListener('change' , () => {
+            const file = inputEl.files[0]; 
+            const fr = new FileReader();
+
+            fr.readAsDataURL(file);
+            fr.addEventListener('load', () => {
+                const url = fr.result
+                localStorage.setItem('new-image', url);
+            });
+        });
+        
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            document.getElementById('output').textContent = localStorage.getItem('new-image');
+
+            const url = localStorage.getItem('new-image');
+            // Get data URL from localStorage
+
+            const img = new Image();
+            img.src = url;
+            document.body.appendChild(img);
+            // Set URL as src of image and append to DOM
+        })
+    }
+</script>
+  
+</body>
+</html>
