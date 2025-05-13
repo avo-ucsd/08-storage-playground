@@ -66,7 +66,7 @@ Here's a quick rundown of the pros and cons:
 While we discuss our options and/or wait for approval for these APIs, we can play around with relative file paths for now (e.g. `./assets/images/food.png`). In the JSON that we use for recipes, it might be a good approach to use an Object to wrap our image data in so that it's easily swappable. For example:
 
 ##### Initial Implementation: Relative File Paths
-```json
+```
 { 
   title: "Chocolate Chip Cookies",
   image: {
@@ -77,7 +77,7 @@ While we discuss our options and/or wait for approval for these APIs, we can pla
 ```
 
 ##### Next Implementation: Blobs
-```json
+```
 { 
   title: "Chocolate Chip Cookies",
   image: {
